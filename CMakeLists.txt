@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 project(leetcode)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 add_executable(test126 126.cpp)
 add_executable(test139 139.cpp)
@@ -22,3 +23,4 @@ add_executable(p166 166.cpp)
 add_executable(longest-common-prefix lcp.cpp)
 add_executable(merge-two-sorted-lists merge-two-sorted-lists.cpp)
 add_executable(pascal-triangle-ii pascal-triangle-ii.cpp)
+add_executable(repeated-dna-sequences repeated-dna-sequences.cpp)
