@@ -5,11 +5,12 @@
 #include <vector>
 #include <string>
 
+
 using namespace std;
 class Solution {
-    vector<int> ann = {1,1,2,6,24,120,720,5040,40320,362880};
 public:
-    string getPermutation(int n, int k) {
+	string getPermutation(int n, int k) {
+		vector<int> ann = { 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 };
         k--;
         vector<char> b = {'1','2','3','4','5','6','7','8','9'};
         string res;

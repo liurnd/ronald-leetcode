@@ -31,3 +31,8 @@ public:
             travel(level+1, root->right, result);
     }
 };
+
+int main()
+{
+	return 0;
+}

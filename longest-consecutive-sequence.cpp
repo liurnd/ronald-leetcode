@@ -4,6 +4,7 @@
 
 #include <unordered_map>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -17,9 +18,9 @@ public:
             num_parent[id] =  get_father(num_parent[id]);
         return num_parent[id];
     }
-    int merge(int id, int id2)
+    void merge(int id, int id2)
     {
-        num_parent[id] = get_father(id2);
+        num_parent[get_father(id)] = get_father(id2);
     }
     bool is_consecutive(int id, int id2)
     {
@@ -59,12 +60,11 @@ public:
     }
 };
 
-#include <iostream>
 
 int main()
 {
     Solution s;
-    vector<int> buf = {100,4,200,1,3,2};
+    vector<int> buf = {100,4,6,8,200,1,3,2,5};
     cout << s.longestConsecutive(buf) << endl;
     return 0;
 }
