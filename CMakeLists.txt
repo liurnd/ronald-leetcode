@@ -38,3 +38,6 @@ add_executable(kth-largest-element-in-an-array kth-largest-element-in-an-array.c
 add_executable(longest-valid-parentheses longest-valid-parentheses.cpp)
 add_executable(best-time-to-buy-and-sell-stock best-time-to-buy-and-sell-stock.cpp)
 add_executable(candy candy.cpp)
+add_executable(single-number single-number.cpp)
+add_executable(triangle triangle.cpp)
+add_executable(best-time-to-buy-and-sell-stock-iv best-time-to-buy-and-sell-stock-iv.cpp)
