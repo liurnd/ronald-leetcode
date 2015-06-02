@@ -12,8 +12,8 @@ TreeNode *getfull3Tree()
 
     tmp->left->left = new TreeNode(3);
     tmp->left->right = new TreeNode(4);
-    tmp->right->left = new TreeNode(4);
-    tmp->right->right = new TreeNode(5);
+    tmp->right->left = new TreeNode(5);
+    tmp->right->right = new TreeNode(6);
 
     return tmp;
 }
