@@ -12,7 +12,19 @@ struct ListNode {
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) {}
 };
-
+ListNode* getNNode(int s, int n)
+{
+    if (n == 0)
+        return nullptr;
+    ListNode *head= new ListNode(s);
+    ListNode *p=head;
+    for (int i = 1; i < n; i++)
+    {
+        p->next = new ListNode(s+i);
+        p = p->next;
+    }
+    return head;
+}
 ListNode* getNNode(int n)
 {
     if (n == 0)
@@ -23,6 +35,18 @@ ListNode* getNNode(int n)
     {
         p->next = new ListNode(i);
         p = p->next;
+    }
+    return head;
+}
+#include <vector>
+ListNode* getNNode(const std::vector<int> & t)
+{
+    ListNode *head = getNNode(t.size());
+    ListNode *tail = head;
+    for (int i = 0 ;i < t.size(); i++)
+    {
+        tail->val = t[i];
+        tail = tail->next;
     }
     return head;
 }
